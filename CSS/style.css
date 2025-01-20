@@ -1,0 +1,211 @@
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.quicksand-font {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.raleway-font {
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 1rem;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Variables */
+:root {
+    /* Colors */
+    --primary-color: #FEA301;
+
+}
+
+#bar-icon {
+    display: none;
+}
+main{
+    background-image: url(../assets/bg.png);
+    background-color: beige;
+}
+
+/* Shared styles */
+.display-flex {
+    display: flex;
+}
+.btn-primary {
+    font-weight: bold;
+    font-size: 1.25rem;
+    background-color: black;
+    color: white;
+    padding: 10px 47px;
+    border-radius: 12px;
+    border: none;
+}
+.section-title{
+    font-size: 2.8rem;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+
+/* Header */
+/* Navbar */
+.nav-bar {
+    max-width: 1440px;
+    margin: 20px auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+}
+
+.logo-title {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+nav ul {
+    gap: 32px;
+}
+
+.list-items {
+    list-style: none;
+}
+
+#item-1 {
+    color: var(--primary-color);
+}
+
+#item-2 {
+    color: #01ACFD;
+    font-weight: 500;
+}
+
+#item-3 {
+    color: #05D4DF;
+    font-weight: 500;
+}
+
+#item-4 {
+    color: #5D58EF;
+    font-weight: 500;
+}
+
+.list-items a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.nav-btn {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 600;
+    font-size: 1.25rem;
+    padding: 10px 60px;
+    border-radius: 12px;
+    border: none;
+}
+
+/* Banner */
+.banner {
+    max-width: 1440px;
+    margin: 50px auto;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 0;
+}
+
+.about-banner {
+    max-width: 640px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: start;
+    gap: 24px;
+}
+
+.banner-title {
+    font-weight: bold;
+    font-size: 3.5rem;
+}
+
+.banner-description {
+    font-size: 1.25rem;
+}
+
+.text-design-1 {
+    color: var(--primary-color);
+}
+
+.text-design-2 {
+    color: #01ACFD;
+}
+
+
+
+/* Standard curriculum section related styles */
+.curriculum{
+    max-width: 1440PX;
+    margin: 0 auto;
+}
+
+
+/* Our Stories related styles */
+
+
+
+/* Footer */
+
+
+
+/* Responsive for small devices */
+@media screen and (max-width: 576px) {
+    .nav-bar {
+        margin-top: 0;
+        padding: 12px 16px;
+        border-bottom: 1px solid var(--primary-color);
+    }
+
+    .logo-title,
+    .items,
+    .nav-btn {
+        display: none;
+    }
+
+    #bar-icon {
+        display: block;
+        font-size: 2rem;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+        padding: 16px;
+        text-align: center;
+        margin-top: 0;
+    }
+    .banner-img {
+        width: 100%;
+    }
+    .banner-btn {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
