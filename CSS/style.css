@@ -182,6 +182,7 @@ nav ul {
     box-shadow: 0 0 28.3px 0.94px rgba(0, 0, 0, 0.05);
     border-radius: 19px;
     background: linear-gradient(rgba(222, 245, 255, 1), rgba(255, 255, 255, 0));
+    background-color: white;
     border: 2px solid #DEF5FF;
     flex-direction: column;
     align-items: center;
@@ -235,7 +236,7 @@ nav ul {
 
 .angle-left,
 .angle-right {
-    background-color: #FEA301;
+    background-color: var(--primary-color);
     color: white;
     border-radius: 50%;
 }
@@ -350,7 +351,64 @@ nav ul {
 
 
 /* Footer */
-
+footer{
+    width: 100%;
+    background-color: #01ACFD;
+}
+.footer-section{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-top: 123px;
+    padding-bottom: 174px;
+    gap: 50px;
+    justify-content: space-between;
+}
+.about-footer{
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    margin-bottom: 35px;
+}
+.about-footer img{
+    width: 82px;
+}
+.footer-logo{
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.footer-description{
+    font-size: 1.25rem;
+    color: white;
+}
+.footer-d2 h3{
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 32px;
+    color: white;
+}
+.footer-d2 ul{
+    flex-direction: column;
+    gap: 20px;
+}
+.footer-d2 ul li{
+    list-style: none;
+}
+.footer-d2 ul li a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: white;
+}
+.footer-d3 h3{
+    font-size: 1.625rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 32px;
+}
+.footer-d3 > div{
+    gap: 10px;
+}
 
 
 /* Responsive for small devices */
@@ -413,9 +471,6 @@ nav ul {
         padding: 16px;
     }
 
-    /* .story-box2-cards{
-        max-width: 173px;
-    } */
     .box2-card1-btn {
         font-size: 0.6rem;
         padding: 5px 11px;
@@ -430,5 +485,9 @@ nav ul {
     .our-stories{
         padding-top: 0;
         gap: 20px;
+    }
+    .footer-section{
+        flex-direction: column;
+        padding: 65px 12px 60px 20px;
     }
 }
