@@ -16,6 +16,7 @@
     font-weight: 500;
     font-size: 1rem;
     font-style: normal;
+    color: #808080;
 }
 
 * {
@@ -35,7 +36,7 @@
 }
 main{
     background-image: url(../assets/bg.png);
-    background-color: beige;
+    /* background-color: beige; */
 }
 
 /* Shared styles */
@@ -50,12 +51,11 @@ main{
     padding: 10px 47px;
     border-radius: 12px;
     border: none;
+    cursor: pointer;
 }
 .section-title{
     font-size: 2.8rem;
     padding-top: 60px;
-    padding-bottom: 80px;
-    text-align: center;
 }
 
 
@@ -163,6 +163,70 @@ nav ul {
 .curriculum{
     max-width: 1440PX;
     margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin-bottom: 60px;
+}
+.card-boxes{
+    gap: 28px;
+}
+.card-box{
+    max-width: 367px;
+    box-shadow: 0 0 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    border-radius: 19px;
+    background: linear-gradient(rgba(222, 245, 255, 1), rgba(255, 255, 255, 0));
+    border: 2px solid #DEF5FF;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 52px 40px;
+    gap: 33px;
+}
+#box-2{
+    background: linear-gradient(rgba(255, 244, 220, 1), rgba(255, 255, 255, 0));
+    border: 2px solid #FFF4DC;
+}
+#box-3{
+    background: linear-gradient(rgba(238, 225, 255, 1), rgba(255, 255, 255, 0));
+    border: 2px solid #F2E8FF;
+}
+
+.box-title{
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #202020;
+}
+.box-description{
+    line-height: 25px;
+}
+.read-more{
+    font-weight: bold;
+    font-size: 1rem;
+    color: #64C8FF;
+}
+.read-more-color1{
+    color: #F0AA00;
+}
+.read-more-color2{
+    color: #8700FF;
+}
+/* Angle section */
+.angle-section{
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+.angle-left, .angle-right{
+    background-color: #FEA301;
+    color: white;
+    border-radius: 50%;
+}
+.angle-position{
+    padding: 22px;
 }
 
 
@@ -179,7 +243,7 @@ nav ul {
     .nav-bar {
         margin-top: 0;
         padding: 12px 16px;
-        border-bottom: 1px solid var(--primary-color);
+        border-bottom: 1px solid var(--primary-color);  
     }
 
     .logo-title,
@@ -206,6 +270,20 @@ nav ul {
         width: 100%;
         justify-content: center;
         align-items: center;
+    }
+    .curriculum{
+        gap: 20px;
+        padding: 16px;
+    }
+    .section-title{
+        text-align: center;
+        font-size: 1.6rem;
+    }
+    .card-boxes{
+        flex-direction: column;
+    }
+    .angle-section{
+        display: none;
     }
 }
 
