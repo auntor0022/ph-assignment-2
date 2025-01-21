@@ -55,6 +55,9 @@ main {
     border: none;
     cursor: pointer;
 }
+.btn-primary:hover{
+    background-color: var(--primary-color);
+}
 
 .section-title {
     font-size: 2.8rem;
@@ -123,6 +126,10 @@ nav ul {
     padding: 10px 60px;
     border-radius: 12px;
     border: none;
+    cursor: pointer;
+}
+.nav-btn:hover{
+    background-color: black;
 }
 
 /* Banner */
@@ -338,6 +345,9 @@ nav ul {
     margin-top: -20px;
     /* margin-bottom: 20px; */
 }
+.shift-btn{
+    margin-left: -90px;
+}
 
 .btn-bg {
     background-color: #5D58F0;
@@ -476,6 +486,9 @@ footer{
         padding: 5px 11px;
         margin-left: -45px;
         margin-top: -10px;
+    }
+    .shift-btn{
+        margin-left: -70px;
     }
 
     .box2-cards-title {
