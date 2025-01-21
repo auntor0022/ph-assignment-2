@@ -34,7 +34,8 @@
 #bar-icon {
     display: none;
 }
-main{
+
+main {
     background-image: url(../assets/bg.png);
     /* background-color: beige; */
 }
@@ -43,6 +44,7 @@ main{
 .display-flex {
     display: flex;
 }
+
 .btn-primary {
     font-weight: bold;
     font-size: 1.25rem;
@@ -53,7 +55,8 @@ main{
     border: none;
     cursor: pointer;
 }
-.section-title{
+
+.section-title {
     font-size: 2.8rem;
     padding-top: 60px;
 }
@@ -160,7 +163,7 @@ nav ul {
 
 
 /* Standard curriculum section related styles */
-.curriculum{
+.curriculum {
     max-width: 1440PX;
     margin: 0 auto;
     flex-direction: column;
@@ -169,10 +172,12 @@ nav ul {
     gap: 80px;
     margin-bottom: 60px;
 }
-.card-boxes{
+
+.card-boxes {
     gap: 28px;
 }
-.card-box{
+
+.card-box {
     max-width: 367px;
     box-shadow: 0 0 28.3px 0.94px rgba(0, 0, 0, 0.05);
     border-radius: 19px;
@@ -185,53 +190,163 @@ nav ul {
     padding: 52px 40px;
     gap: 33px;
 }
-#box-2{
+
+#box-2 {
     background: linear-gradient(rgba(255, 244, 220, 1), rgba(255, 255, 255, 0));
     border: 2px solid #FFF4DC;
 }
-#box-3{
+
+#box-3 {
     background: linear-gradient(rgba(238, 225, 255, 1), rgba(255, 255, 255, 0));
     border: 2px solid #F2E8FF;
 }
 
-.box-title{
+.box-title {
     font-weight: bold;
     font-size: 1.5rem;
     color: #202020;
 }
-.box-description{
+
+.box-description {
     line-height: 25px;
 }
-.read-more{
+
+.read-more {
     font-weight: bold;
     font-size: 1rem;
     color: #64C8FF;
 }
-.read-more-color1{
+
+.read-more-color1 {
     color: #F0AA00;
 }
-.read-more-color2{
+
+.read-more-color2 {
     color: #8700FF;
 }
+
 /* Angle section */
-.angle-section{
+.angle-section {
     gap: 10px;
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
 }
-.angle-left, .angle-right{
+
+.angle-left,
+.angle-right {
     background-color: #FEA301;
     color: white;
     border-radius: 50%;
 }
-.angle-position{
+
+.angle-position {
     padding: 22px;
 }
 
 
 /* Our Stories related styles */
+.section-2 {
+    background: linear-gradient(to top, rgba(254, 163, 1, 0.2), rgba(255, 255, 255, 1));
+}
 
+.our-stories {
+    max-width: 1440px;
+    margin: 0 auto;
+    flex-direction: column;
+    gap: 80px;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 60px;
+}
+
+.story-box {
+    gap: 20px;
+}
+
+.story-box-card {
+    background-color: white;
+    max-width: 540px;
+    border-radius: 16px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.story-box-card img {
+    border-radius: 16px 16px 0 0;
+}
+
+.story-box-btn {
+    background-color: #3CD8E8;
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+    font-family: "Raleway", serif;
+    padding: 15px 18px;
+    border-radius: 48px;
+    border: none;
+    margin-left: -300px;
+    margin-top: -25px;
+}
+
+.about-story-card {
+    padding: 33px;
+}
+
+.story-card-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 47px;
+}
+
+.story-boxes-card {
+    max-width: 600px;
+}
+
+.story-box2-cards {
+    max-width: 290px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    align-items: center;
+
+}
+
+.story-boxes-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.story-box2-cards img {
+    border-radius: 16px 16px 0 0;
+    width: 100%;
+}
+
+.box2-card1-btn {
+    background-color: #95B226;
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+    font-family: "Raleway", serif;
+    padding: 10px 18px;
+    border-radius: 48px;
+    border: none;
+    margin-left: -55px;
+    margin-top: -20px;
+    /* margin-bottom: 20px; */
+}
+
+.btn-bg {
+    background-color: #5D58F0;
+}
+
+.box2-cards-title {
+    padding: 19px 38px 28px 38px;
+    font-weight: bold;
+    font-size: 1rem;
+}
 
 
 /* Footer */
@@ -243,7 +358,7 @@ nav ul {
     .nav-bar {
         margin-top: 0;
         padding: 12px 16px;
-        border-bottom: 1px solid var(--primary-color);  
+        border-bottom: 1px solid var(--primary-color);
     }
 
     .logo-title,
@@ -263,27 +378,57 @@ nav ul {
         text-align: center;
         margin-top: 0;
     }
+
     .banner-img {
         width: 100%;
     }
+
     .banner-btn {
         width: 100%;
         justify-content: center;
         align-items: center;
     }
-    .curriculum{
+
+    .curriculum {
         gap: 20px;
         padding: 16px;
     }
-    .section-title{
+
+    .section-title {
         text-align: center;
         font-size: 1.6rem;
     }
-    .card-boxes{
+
+    .card-boxes {
         flex-direction: column;
     }
-    .angle-section{
+
+    .angle-section,
+    .story-box-card {
         display: none;
     }
-}
 
+    .story-boxes-card {
+        gap: 10px;
+        padding: 16px;
+    }
+
+    /* .story-box2-cards{
+        max-width: 173px;
+    } */
+    .box2-card1-btn {
+        font-size: 0.6rem;
+        padding: 5px 11px;
+        margin-left: -45px;
+        margin-top: -10px;
+    }
+
+    .box2-cards-title {
+        font-size: 0.6rem;
+        padding: 11px 22px 17px 22px;
+    }
+    .our-stories{
+        padding-top: 0;
+        gap: 20px;
+    }
+}
