@@ -243,10 +243,15 @@ nav ul {
 }
 
 .angle-left,
-.angle-right {
+.angle-right{
     background-color: var(--primary-color);
     color: var(--white-color);
     border-radius: 50%;
+    cursor: pointer;
+}
+.angle-left:hover,
+.angle-right:hover{
+    background-color: #ecc363;
 }
 
 .angle-position {
