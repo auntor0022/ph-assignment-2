@@ -28,7 +28,8 @@
 :root {
     /* Colors */
     --primary-color: #FEA301;
-
+    --secondary-color: #01ACFD;
+    --white-color: #FFFFFF;
 }
 
 #bar-icon {
@@ -49,7 +50,7 @@ main {
     font-weight: bold;
     font-size: 1.25rem;
     background-color: black;
-    color: white;
+    color: var(--white-color);
     padding: 10px 47px;
     border-radius: 12px;
     border: none;
@@ -98,7 +99,7 @@ nav ul {
 }
 
 #item-2 {
-    color: #01ACFD;
+    color: var(--secondary-color);
     font-weight: 500;
 }
 
@@ -120,7 +121,7 @@ nav ul {
 
 .nav-btn {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--white-color);
     font-weight: 600;
     font-size: 1.25rem;
     padding: 10px 60px;
@@ -164,7 +165,7 @@ nav ul {
 }
 
 .text-design-2 {
-    color: #01ACFD;
+    color: var(--secondary-color);
 }
 
 
@@ -189,7 +190,7 @@ nav ul {
     box-shadow: 0 0 28.3px 0.94px rgba(0, 0, 0, 0.05);
     border-radius: 19px;
     background: linear-gradient(rgba(222, 245, 255, 1), rgba(255, 255, 255, 0));
-    background-color: white;
+    background-color: var(--white-color);
     border: 2px solid #DEF5FF;
     flex-direction: column;
     align-items: center;
@@ -244,18 +245,18 @@ nav ul {
 .angle-left,
 .angle-right {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--white-color);
     border-radius: 50%;
 }
 
 .angle-position {
-    padding: 22px;
+    padding: 18px 22px;
 }
 
 
 /* Our Stories related styles */
 .section-2 {
-    background: linear-gradient(to top, rgba(254, 163, 1, 0.2), rgba(255, 255, 255, 1));
+    background: linear-gradient(to top, rgba(254, 163, 1, 0.2 ), rgba(255, 255, 255, 1));
 }
 
 .our-stories {
@@ -273,7 +274,7 @@ nav ul {
 }
 
 .story-box-card {
-    background-color: white;
+    background-color: var(--white-color);
     max-width: 540px;
     border-radius: 16px;
     flex-direction: column;
@@ -286,7 +287,7 @@ nav ul {
 
 .story-box-btn {
     background-color: #3CD8E8;
-    color: white;
+    color: var(--white-color);
     font-weight: 500;
     font-size: 1rem;
     font-family: "Raleway", serif;
@@ -313,7 +314,7 @@ nav ul {
 
 .story-box2-cards {
     max-width: 290px;
-    background-color: white;
+    background-color: var(--white-color);
     display: flex;
     flex-direction: column;
     border-radius: 16px;
@@ -334,7 +335,7 @@ nav ul {
 
 .box2-card1-btn {
     background-color: #95B226;
-    color: white;
+    color: var(--white-color);
     font-weight: 500;
     font-size: 1rem;
     font-family: "Raleway", serif;
@@ -363,7 +364,7 @@ nav ul {
 /* Footer */
 footer{
     width: 100%;
-    background-color: #01ACFD;
+    background-color: var(--secondary-color);
 }
 .footer-section{
     max-width: 1440px;
@@ -379,23 +380,24 @@ footer{
     gap: 10px;
     margin-bottom: 35px;
 }
-.about-footer img{
+.logo-img{
     width: 82px;
+    height: 82px;
 }
 .footer-logo{
-    color: white;
+    color: var(--white-color);
     font-weight: bold;
     font-size: 2rem;
 }
 .footer-description{
     font-size: 1.25rem;
-    color: white;
+    color: var(--white-color);
 }
 .footer-d2 h3{
     font-weight: bold;
     font-size: 1.5rem;
     margin-bottom: 32px;
-    color: white;
+    color: var(--white-color);
 }
 .footer-d2 ul{
     flex-direction: column;
@@ -408,12 +410,12 @@ footer{
     text-decoration: none;
     font-weight: 500;
     font-size: 1.25rem;
-    color: white;
+    color: var(--white-color);
 }
 .footer-d3 h3{
     font-size: 1.625rem;
     font-weight: bold;
-    color: white;
+    color: var(--white-color);
     margin-bottom: 32px;
 }
 .footer-d3 > div{
